@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>阳光中学 - 培养未来的栋梁</title>
+  <title>新疆生产建设兵团第二中学</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script>
@@ -11,8 +11,8 @@
       theme: {
         extend: {
           colors: {
-            primary: '#1E50B3',
-            secondary: '#3AAA35',
+            primary: '#C92027', // 兵团二中主色调（红色系）
+            secondary: '#0A4887', // 辅助色（蓝色系）
             dark: '#333333',
           },
         }
@@ -24,28 +24,52 @@
       .nav-link { @apply px-4 py-2 hover:text-primary transition-colors; }
       .section-title { @apply text-2xl md:text-3xl font-bold text-primary mb-4; }
       .section-divider { @apply w-20 h-1 bg-primary my-6; }
+      .eng-text { @apply text-secondary italic mt-1 mb-4; }
+      .hero-bg {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1950&q=80');
+        background-size: cover;
+        background-position: center;
+      }
+      .school-badge {
+        position: absolute;
+        top: -30px;
+        right: -30px;
+        width: 60px;
+        height: 60px;
+        background: #C92027;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
     }
   </style>
 </head>
-<body class="bg-gray-50 text-dark">
+<body class="bg-gray-50 text-dark font-sans">
   <!-- 头部 -->
-  <header class="bg-primary text-white p-4">
+  <header class="bg-primary text-white p-4 relative">
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
       <div class="text-center md:text-left mb-4 md:mb-0">
-        <h1 class="text-2xl font-bold">阳光中学</h1>
-        <p class="text-sm opacity-90">明德博学 · 励志笃行</p>
+        <h1 class="text-2xl font-bold">新疆生产建设兵团第二中学</h1>
+        <p class="text-sm opacity-90">Xinjiang Production and Construction Corps No.2 Middle School</p>
       </div>
       <div class="flex items-center space-x-4">
         <i class="fa fa-phone mr-1"></i>
-        <span>招生咨询：010-12345678</span>
+        <span>招生咨询：0991-2630704</span>
       </div>
+    </div>
+    <div class="school-badge">
+      <span class="text-xs">72年</span>
     </div>
   </header>
 
   <!-- 导航栏 -->
   <nav class="bg-white shadow-sm sticky top-0 z-10">
     <div class="container mx-auto">
-      <ul class="flex flex-wrap py-3">
+      <ul class="flex flex-wrap py-3 justify-center">
         <li><a href="#history" class="nav-link">学校历史</a></li>
         <li><a href="#environment" class="nav-link">校园环境</a></li>
         <li><a href="#activities" class="nav-link">校园文化</a></li>
@@ -55,31 +79,58 @@
     </div>
   </nav>
 
+  <!-- 英雄区域 -->
+  <section class="hero-bg text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">自强不息 攀高不止</h1>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">致力于培养德智体美劳全面发展的社会主义建设者和接班人</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#contact" class="bg-secondary hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">招生咨询</a>
+        <a href="#history" class="bg-transparent border-2 border-white hover:bg-white hover:text-primary text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">了解更多</a>
+      </div>
+    </div>
+  </section>
+
   <!-- 主要内容 -->
   <main class="container mx-auto p-4 py-8">
     <!-- 学校简介 -->
     <section class="bg-white rounded-lg shadow-sm p-6 mb-8">
       <h2 class="section-title">学校简介</h2>
+      <p class="eng-text">School Introduction</p>
       <div class="section-divider"></div>
-      <p class="mb-4">阳光中学成立于1985年，是一所拥有悠久历史和优良传统的全日制初级中学。学校占地面积50亩，建筑面积2万余平方米，现有36个教学班，学生1800余人，教职工120余人。</p>
-      <p>学校始终坚持"以人为本，全面发展"的办学理念，注重培养学生的创新精神和实践能力，形成了"勤学、善思、乐问、笃行"的优良学风。近年来，学校教育教学质量稳步提升，连续多年荣获市、区教育系统先进单位称号。</p>
+      
+      <p class="mb-1">新疆生产建设兵团第二中学（简称"兵团二中"）创建于1951年，是新疆生产建设兵团直属的重点中学，自治区示范性普通高级中学。学校位于乌鲁木齐市天山区，占地面积85亩，建筑面积5万余平方米。</p>
+      <p class="eng-text">Founded in 1951, Xinjiang Production and Construction Corps No.2 Middle School (referred to as "Bingtuan No.2 Middle School") is a key middle school directly under the Xinjiang Production and Construction Corps and a demonstration ordinary senior high school in the autonomous region. The school is located in Tianshan District, Urumqi, covering an area of 85 mu with a construction area of more than 50,000 square meters.</p>
+      
+      <p class="mb-1">学校核定编制总数为350人，核定教学班78个（小学24个、初中18个、高中36个）。近三年，学校教师共有50余人次获省级、国家级讲课大赛一等奖，在省级以上期刊发表论文一百二十多篇。截至2015年9月，学校有国务院特殊津贴专家2人、“兵团英才工程”第一层次人才2人、自治区特级教师9人。</p>
+      <p class="eng-text">The school has an approved total staff of 350 people, with 78 approved teaching classes (24 in primary school, 18 in junior high, and 36 in senior high). In the past three years, over 50 teachers from the school have won first prizes in provincial and national teaching competitions, and more than 120 papers have been published in provincial-level and higher journals. As of September 2015, the school has 2 experts receiving special allowances from the State Council, 2 first-level talents from the 'Corps Talent Project,' and 9 teachers with special-grade status in the autonomous region".</p>
+      
+      <p class="mb-1">学校秉承"自强不息，攀高不止"的办学理念，坚持素质教育，注重学生全面发展。多年来，学校教育教学质量稳步提升，高考成绩在全疆名列前茅，为国家和社会培养了大批优秀人才。</p>
+      <p class="eng-text">Adhering to the educational philosophy of "Strive unceasingly for self-improvement, and keep climbing to greater heights", the school insists on quality education and focuses on the all-round development of students. Over the years, the school's teaching quality has steadily improved, and its college entrance examination results rank among the top in Xinjiang, cultivating a large number of outstanding talents for the country and society.</p>
+      
+      <p class="mb-1">近些年学校先后被评为“全国教育系统先进集体”、“全国学校及周边环境综合治理先进单位”、“全国平安和谐校园”、“全国消防安全教育示范学校”、“全国文明单位”等称号，得到了社会的广泛认可和好评。</p>
+      <p class="eng-text">In recent years, the school has successively been awarded titles such as 'National Advanced Collective in the Education System,' 'National Advanced Unit for Comprehensive Management of Schools and Surrounding Environments,' 'National Safe and Harmonious Campus,' 'National Demonstration School for Fire Safety Education,' and 'National Civilized Unit,' receiving widespread recognition and praise from society.</p>
       
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 text-center">
         <div class="p-3 bg-gray-50 rounded">
-          <div class="text-xl font-bold text-primary">36+</div>
+          <div class="text-xl font-bold text-primary">78</div>
           <div class="text-sm text-gray-600">教学班级</div>
+          <div class="text-xs text-secondary italic">Teaching Classes</div>
         </div>
         <div class="p-3 bg-gray-50 rounded">
-          <div class="text-xl font-bold text-primary">1800+</div>
+          <div class="text-xl font-bold text-primary">4000+</div>
           <div class="text-sm text-gray-600">在校学生</div>
+          <div class="text-xs text-secondary italic">Students</div>
         </div>
         <div class="p-3 bg-gray-50 rounded">
-          <div class="text-xl font-bold text-primary">120+</div>
+          <div class="text-xl font-bold text-primary">350</div>
           <div class="text-sm text-gray-600">教职工</div>
+          <div class="text-xs text-secondary italic">Faculty</div>
         </div>
         <div class="p-3 bg-gray-50 rounded">
-          <div class="text-xl font-bold text-primary">38年</div>
+          <div class="text-xl font-bold text-primary">75年</div>
           <div class="text-sm text-gray-600">办学历史</div>
+          <div class="text-xs text-secondary italic">History</div>
         </div>
       </div>
     </section>
@@ -87,34 +138,31 @@
     <!-- 学校历史 -->
     <section id="history" class="bg-white rounded-lg shadow-sm p-6 mb-8">
       <h2 class="section-title">学校历史</h2>
+      <p class="eng-text">School History</p>
       <div class="section-divider"></div>
       <div class="space-y-4">
         <div class="flex">
-          <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-4">1985</div>
+          <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-4">1951</div>
           <div>
             <h3 class="font-semibold text-lg">建校初期</h3>
-            <p>阳光中学正式成立，最初仅有8个教学班，300余名学生，20余名教职工。学校确立了"明德博学，励志笃行"的校训。</p>
+            <p class="mb-1">学校前身是中国人民解放军二十二兵团后勤运输部子弟学校，创建于1951年，是新疆最早的汉语学校之一。</p>
+            <p class="eng-text">The predecessor of the school was the Children's School of the Logistics and Transportation Department of the 22nd Corps of the Chinese People's Liberation Army, founded in 1951, and was one of the earliest Chinese schools in Xinjiang.</p>
           </div>
         </div>
         <div class="flex">
-          <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-4">1995</div>
+          <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-4">1959</div>
           <div>
-            <h3 class="font-semibold text-lg">首次扩建</h3>
-            <p>学校扩建工程完成，新增教学楼和实验室，办学规模扩大到18个教学班，学生人数突破1000人，被评为区级重点中学。</p>
+            <h3 class="font-semibold text-lg">蓬勃发展</h3>
+            <p class="mb-1">发展成为新疆维吾尔自治区首批公立重点中学，开始进入快速发展时期。</p>
+            <p class="eng-text">Developed into one of the first public key high schools in Xinjiang Uygur Autonomous Region, and began to enter a period of rapid development.</p>
           </div>
         </div>
         <div class="flex">
-          <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-4">2005</div>
+          <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-4">2006</div>
           <div>
-            <h3 class="font-semibold text-lg">信息化建设</h3>
-            <p>引入现代化教学设备，建成多媒体教室和校园网络系统，开始推进信息化教学改革，教学质量显著提升。</p>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-4">2015</div>
-          <div>
-            <h3 class="font-semibold text-lg">设施升级</h3>
-            <p>新建体育馆和塑胶跑道，完善体育设施，被评为"市级体育特色学校"，同时荣获"市文明单位"称号。</p>
+            <h3 class="font-semibold text-lg">示范高中</h3>
+            <p class="mb-1">被评为"兵团示范性普通高级中学"，教学质量和办学水平位居全疆前列。</p>
+            <p class="eng-text">Rated as a 'Model General Senior High School of the Corps', its teaching quality and school management level are among the top in the whole Xinjiang.</p>
           </div>
         </div>
       </div>
@@ -123,29 +171,34 @@
     <!-- 校园环境 -->
     <section id="environment" class="bg-white rounded-lg shadow-sm p-6 mb-8">
       <h2 class="section-title">校园环境</h2>
+      <p class="eng-text">Campus Environment</p>
       <div class="section-divider"></div>
-      <p class="mb-6">优美的校园环境，为学生提供良好的学习成长空间</p>
+      <p class="mb-1">学校位于乌鲁木齐市天山区繁华地段，校园环境优美，教学设施先进</p>
+      <p class="eng-text mb-6">The school is located in a bustling area of Tianshan District, Urumqi, with a beautiful campus environment and advanced teaching facilities</p>
       
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="rounded overflow-hidden shadow-sm">
-          <img src="https://picsum.photos/id/1059/600/400" alt="校园全景" class="w-full h-48 object-cover">
+          <img src="https://bkimg.cdn.bcebos.com/pic/f11f3a292df5e0fe992542dedd3523a85edf8cb1d4ec?x-bce-process=image/format,f_auto/watermark,image_d2F0ZXIvYmFpa2UyNzI,g_7,xp_5,yp_5,P_20/resize,m_lfit,limit_1,h_1080" alt="校园全景" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="font-semibold">校园全景</h3>
-            <p class="text-sm text-gray-600">学校占地面积50亩，绿树成荫，环境优美</p>
+            <p class="text-sm text-gray-600 mb-1">占地面积85亩，绿树成荫，环境优美</p>
+            <p class="text-xs text-secondary italic">85 mu campus with lush greenery and beautiful environment</p>
           </div>
         </div>
         <div class="rounded overflow-hidden shadow-sm">
-          <img src="https://picsum.photos/id/20/600/400" alt="教学楼" class="w-full h-48 object-cover">
+          <img src="https://ts1.tc.mm.bing.net/th/id/R-C.863809d6b964c5e06f3b722b178d9b97?rik=tzcaU0rm4QJ2JA&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20180529%2f6aede101389e43ea958db092215fdc76.jpeg&ehk=IS5DIySUPu5yhedflLyVDcX7Nhn%2fguv15DRP7xyqSX8%3d&risl=&pid=ImgRaw&r=0" alt="教学楼" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="font-semibold">现代化教学楼</h3>
-            <p class="text-sm text-gray-600">配备多媒体教学设备的现代化教室</p>
+            <p class="text-sm text-gray-600 mb-1">配备多媒体教学设备的现代化教室</p>
+            <p class="text-xs text-secondary italic">Modern classrooms with multimedia teaching equipment</p>
           </div>
         </div>
         <div class="rounded overflow-hidden shadow-sm">
-          <img src="https://picsum.photos/id/24/600/400" alt="图书馆" class="w-full h-48 object-cover">
+          <img src="https://bkimg.cdn.bcebos.com/smart/b999a9014c086e061d958f95835d6cf40ad163d95ded-bkimg-process,v_1,rw_711,rh_252,maxl_1423?x-bce-process=image/format,f_auto" alt="课间活动" class="w-full h-48 object-cover">
           <div class="p-4">
-            <h3 class="font-semibold">图书馆</h3>
-            <p class="text-sm text-gray-600">藏书丰富的图书馆，提供广阔的知识海洋</p>
+            <h3 class="font-semibold">课间活动</h3>
+            <p class="text-sm text-gray-600 mb-1">丰富的课间活动</p>
+            <p class="text-xs text-secondary italic">Rich extracurricular activities</p>
           </div>
         </div>
       </div>
@@ -154,47 +207,53 @@
     <!-- 校园文化活动 -->
     <section id="activities" class="bg-white rounded-lg shadow-sm p-6 mb-8">
       <h2 class="section-title">校园文化活动</h2>
+      <p class="eng-text">Campus Cultural Activities</p>
       <div class="section-divider"></div>
-      <p class="mb-6">丰富多样的校园文化活动，促进学生全面发展</p>
+      <p class="mb-1">丰富多样的校园文化活动，促进学生全面发展</p>
+      <p class="eng-text mb-6">A variety of campus cultural activities to promote the all-round development of students</p>
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="flex">
-          <div class="flex-shrink-0 w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mr-4">
-            <i class="fa fa-music text-2xl text-secondary"></i>
+          <div class="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden mr-4">
+            <img src="https://ts1.tc.mm.bing.net/th/id/OIP-C.c-1DzZOVtzunVMr_AFg8LAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="民族团结文化节" class="w-full h-full object-cover">
           </div>
           <div>
-            <h3 class="font-semibold text-lg mb-2">艺术节</h3>
-            <p class="text-gray-700">每年举办校园艺术节，包括歌唱比赛、器乐表演、书画展览等活动，丰富学生的艺术生活。</p>
+            <h3 class="font-semibold text-lg mb-2">民族团结文化节</h3>
+            <p class="text-gray-700 mb-1">展示各民族文化特色，促进民族团结，增强学生对多元文化的理解和尊重。</p>
+            <p class="text-sm text-secondary italic">Showcasing the cultural characteristics of various ethnic groups, promoting national unity, and enhancing students' understanding and respect for multiculturalism.</p>
           </div>
         </div>
         
         <div class="flex">
-          <div class="flex-shrink-0 w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mr-4">
-            <i class="fa fa-trophy text-2xl text-secondary"></i>
+          <div class="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden mr-4">
+            <img src="https://pic.nximg.cn/file/20231020/33446053_185852973103_2.jpg" alt="兵团精神主题活动" class="w-full h-full object-cover">
           </div>
           <div>
-            <h3 class="font-semibold text-lg mb-2">运动会</h3>
-            <p class="text-gray-700">春季和秋季运动会，设有田径、球类等多个项目，培养学生的体育精神和团队协作能力。</p>
+            <h3 class="font-semibold text-lg mb-2">兵团精神主题活动</h3>
+            <p class="text-gray-700 mb-1">通过主题班会、演讲比赛等形式，传承和弘扬兵团精神，培养学生爱国情怀。</p>
+            <p class="text-sm text-secondary italic">Inheriting and promoting the spirit of the Corps through theme class meetings and speech contests to cultivate students' patriotic feelings.</p>
           </div>
         </div>
         
         <div class="flex">
-          <div class="flex-shrink-0 w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mr-4">
-            <i class="fa fa-book text-2xl text-secondary"></i>
+          <div class="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden mr-4">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="读书节" class="w-full h-full object-cover">
           </div>
           <div>
             <h3 class="font-semibold text-lg mb-2">读书节</h3>
-            <p class="text-gray-700">开展读书分享会、知识竞赛、征文比赛等活动，培养学生的阅读习惯和人文素养。</p>
+            <p class="text-gray-700 mb-1">开展读书分享会、知识竞赛、征文比赛等活动，培养学生的阅读习惯和人文素养。</p>
+            <p class="text-sm text-secondary italic">Carrying out reading sharing sessions, knowledge competitions and essay contests to cultivate students' reading habits and humanistic literacy.</p>
           </div>
         </div>
         
         <div class="flex">
-          <div class="flex-shrink-0 w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mr-4">
-            <i class="fa fa-lightbulb-o text-2xl text-secondary"></i>
+          <div class="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden mr-4">
+            <img src="https://ts1.tc.mm.bing.net/th/id/OIP-C.hO9wcqkICGDQGJBAveLrRwHaHm?rs=1&pid=ImgDetMain&o=7&rm=3" alt="科技创新大赛" class="w-full h-full object-cover">
           </div>
           <div>
-            <h3 class="font-semibold text-lg mb-2">科技节</h3>
-            <p class="text-gray-700">举办科技创新大赛、机器人比赛、科学实验展示等活动，激发学生的科学探索精神。</p>
+            <h3 class="font-semibold text-lg mb-2">科技创新大赛</h3>
+            <p class="text-gray-700 mb-1">举办科技创新大赛、机器人比赛、科学实验展示等活动，激发学生的科学探索精神。</p>
+            <p class="text-sm text-secondary italic">Holding technological innovation competitions, robot competitions and scientific experiment exhibitions to inspire students' spirit of scientific exploration.</p>
           </div>
         </div>
       </div>
@@ -203,91 +262,115 @@
     <!-- 未来发展 -->
     <section id="development" class="bg-white rounded-lg shadow-sm p-6 mb-8">
       <h2 class="section-title">未来发展</h2>
+      <p class="eng-text">Future Development</p>
       <div class="section-divider"></div>
-      <p class="mb-6">学校未来发展规划与愿景</p>
+      <p class="mb-1">学校未来发展规划与愿景</p>
+      <p class="eng-text mb-6">School's future development plan and vision</p>
       
       <div class="space-y-4">
         <div class="p-4 border-l-4 border-primary bg-primary/5 rounded-r">
           <h3 class="font-semibold text-lg">智慧校园建设</h3>
-          <p>推进数字化校园建设，引入AI教学系统和大数据分析平台，实现个性化教学和精准化管理。</p>
+          <p class="mb-1">推进数字化校园建设，引入智慧教学平台，实现教学资源共享和个性化学习，提升教学效率和质量。</p>
+          <p class="eng-text">Promote the construction of digital campus, introduce intelligent teaching platforms, realize the sharing of teaching resources and personalized learning, and improve teaching efficiency and quality.</p>
         </div>
-        
-        <div class="p-4 border-l-4 border-primary bg-primary/5 rounded-r">
-          <h3 class="font-semibold text-lg">课程改革深化</h3>
-          <p>开发STEAM课程体系，加强学科融合，培养学生的创新思维和实践能力，适应未来社会发展需求。</p>
-        </div>
-        
         <div class="p-4 border-l-4 border-primary bg-primary/5 rounded-r">
           <h3 class="font-semibold text-lg">师资队伍建设</h3>
-          <p>实施"名师工程"，加强教师培训和专业发展，打造一支高素质、专业化的教师队伍。</p>
+          <p class="mb-1">继续引进高层次人才，加强教师培训，建立完善的教师发展体系，打造一支师德高尚、业务精湛的专业化教师队伍。</p>
+          <p class="eng-text">Continue to introduce high-level talents, strengthen teacher training, establish a comprehensive teacher development system, and build a professional teaching team with high moral standards and excellent skills.</p>
         </div>
-        
         <div class="p-4 border-l-4 border-primary bg-primary/5 rounded-r">
-          <h3 class="font-semibold text-lg">校园设施升级</h3>
-          <p>规划建设科创中心和艺术中心，完善现代化教学设施，为学生提供更好的学习和发展平台。</p>
+          <h3 class="font-semibold text-lg">课程改革深化</h3>
+          <p class="mb-1">深化课程改革，构建多元化课程体系，开设更多选修课程和实践课程，满足学生个性化发展需求。</p>
+          <p class="eng-text">Deepen curriculum reform, build a diversified curriculum system, offer more elective courses and practical courses to meet students' individualized development needs.</p>
+        </div>
+        <div class="p-4 border-l-4 border-primary bg-primary/5 rounded-r">
+          <h3 class="font-semibold text-lg">国际交流合作</h3>
+          <p class="mb-1">拓展国际交流与合作渠道，与国内外知名学校建立合作关系，为学生提供更广阔的发展平台。</p>
+          <p class="eng-text">Expand international exchanges and cooperation channels, establish cooperative relationships with well-known schools at home and abroad, and provide students with broader development platforms.</p>
         </div>
       </div>
     </section>
 
     <!-- 联系我们 -->
-    <section id="contact" class="bg-white rounded-lg shadow-sm p-6">
+    <section id="contact" class="bg-white rounded-lg shadow-sm p-6 mb-8">
       <h2 class="section-title">联系我们</h2>
+      <p class="eng-text">Contact Us</p>
       <div class="section-divider"></div>
+      
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <h3 class="font-semibold text-lg mb-4">联系方式</h3>
-          <ul class="space-y-3">
-            <li class="flex items-center">
-              <i class="fa fa-map-marker text-primary w-6"></i>
-              <span>北京市海淀区阳光路88号</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fa fa-phone text-primary w-6"></i>
-              <span>010-12345678</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fa fa-envelope text-primary w-6"></i>
-              <span>info@sunschool.edu.cn</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fa fa-clock-o text-primary w-6"></i>
-              <span>周一至周五: 8:00-17:30</span>
-            </li>
-          </ul>
+          <h3 class="font-semibold text-lg mb-4">学校地址</h3>
+          <div class="space-y-2">
+            <p><i class="fa fa-map-marker text-primary mr-2"></i>地址：乌市五星南路376号</p>
+            <p><i class="fa fa-envelope text-primary mr-2"></i>邮箱：zm648166wawj@163.com</p>
+            <p><i class="fa fa-phone text-primary mr-2"></i>电话：0991-2630704</p>
+            <p><i class="fa fa-fax text-primary mr-2"></i>传真：0991-2643800</p>
+          </div>
+          
+          <div class="mt-6">
+            <h3 class="font-semibold text-lg mb-4">招生咨询时间</h3>
+            <p>工作日：上午 9:00 - 12:00</p>
+            <p>工作日：下午 15:00 - 18:00</p>
+            <p class="mt-2">周末及节假日休息</p>
+          </div>
         </div>
+        
         <div>
-          <h3 class="font-semibold text-lg mb-4">招生咨询</h3>
-          <p class="mb-4">欢迎家长和学生前来咨询，我们将为您提供详细的学校情况介绍和招生信息。</p>
-          <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">
-            预约咨询
-          </button>
+          <h3 class="font-semibold text-lg mb-4">校园导航</h3>
+          <!-- 校园内导航图片 -->
+          <img 
+            src="https://picx.zhimg.com/ee73ff5685ee91621713cad6ca5edf7f_r.jpg?source=1def8aca" 
+            alt="校园导航图" 
+            class="w-full h-auto rounded-lg border border-gray-200 max-h-[256px]"
+          >
         </div>
       </div>
     </section>
   </main>
 
   <!-- 页脚 -->
-  <footer class="bg-primary text-white p-6 mt-8">
-    <div class="container mx-auto text-center">
-      <p>© 2023 阳光中学 版权所有 | 京ICP备12345678号</p>
-      <div class="mt-4 flex justify-center space-x-4">
-        <a href="#" class="hover:text-gray-200"><i class="fa fa-weibo"></i></a>
-        <a href="#" class="hover:text-gray-200"><i class="fa fa-wechat"></i></a>
-        <a href="#" class="hover:text-gray-200"><i class="fa fa-youtube-play"></i></a>
+  <footer class="bg-dark text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-lg font-bold mb-4">兵团二中</h3>
+          <p class="text-gray-300">新疆生产建设兵团第二中学</p>
+          <p class="text-gray-300">自强不息 攀高不止</p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-bold mb-4">快速链接</h3>
+          <ul class="space-y-2">
+            <li><a href="#history" class="text-gray-300 hover:text-white">学校历史</a></li>
+            <li><a href="#environment" class="text-gray-300 hover:text-white">校园环境</a></li>
+            <li><a href="#activities" class="text-gray-300 hover:text-white">校园文化</a></li>
+            <li><a href="#development" class="text-gray-300 hover:text-white">未来发展</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-bold mb-4">联系方式</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li><i class="fa fa-map-marker text-primary mr-2"></i>乌市五星南路376号</li>
+            <li><i class="fa fa-phone text-primary mr-2"></i>0991-2630704</li>
+            <li><i class="fa fa-envelope text-primary mr-2"></i>www.xjbtez.com.cn</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-bold mb-4">关注我们</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition"><i class="fa fa-wechat"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition"><i class="fa fa-weibo"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition"><i class="fa fa-qq"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+        <p>&copy; 2023 新疆生产建设兵团第二中学 版权所有 | </p>
       </div>
     </div>
   </footer>
-
-  <!-- 简单的平滑滚动脚本 -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
 </body>
 </html>
